@@ -1,4 +1,4 @@
-#!C:\Users\Farnaz\.venv\Scripts\python.exe
+#!C:\Users\Farnaz\rag_learning\.venv\Scripts\python.exe
 
 import sys
 import json
