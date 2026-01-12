@@ -17,6 +17,13 @@ human_message_prompt = HumanMessagePromptTemplate.from_template(human_message)
 
 chat_prompt = ChatPromptTemplate.from_messages([system_message_prompt, human_message_prompt])
 
+
+# ## Output of .to_messages():
+# [
+#     SystemMessage(content="You are an assistant that helps user find info about movies."),
+#     HumanMessage(content="Find information about the movie inception")
+# ]
+# ##%
 response = chat.invoke(chat_prompt.format_prompt(movie_title = "inception").to_messages())
 
 print(response.content)
